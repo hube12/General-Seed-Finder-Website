@@ -1,9 +1,9 @@
 ---
-date: 2018-10-06
-title: "Easy documentation with Docsy"
-linkTitle: "Announcing Docsy"
-description: "The Docsy Hugo theme lets project maintainers and contributors focus on content, not on reinventing a website infrastructure from scratch"
-author: Riona MacNamara ([@rionam](https://twitter.com/bepsays))
+date: 2020-28-06
+title: "Seed finding documentation"
+linkTitle: "Announcing the General Seed Finder Tools (GSFT)"
+description: "The General Seed Finder Tools allows minecraft players and server owners to search for the perfect seed to make their dream world"
+author: Neil ([@NeilSeed](https://twitter.com/NeilSeed))
 resources:
 - src: "**.{png,jpg}"
   title: "Image #:counter"
