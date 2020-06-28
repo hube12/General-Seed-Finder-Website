@@ -5,5 +5,6 @@ To run use:
 
 ```sh
 git clone --recurse-submodules --depth 1 https://github.com/hube12/General-Seed-Finder-Website
-docker-compose up --build
+cd General-Seed-Finder-Website
+docker-compose up --build -d
 ```
