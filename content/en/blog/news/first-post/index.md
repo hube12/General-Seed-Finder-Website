@@ -1,5 +1,5 @@
 ---
-date: 2020-28-06
+date: 2020-06-28
 title: "Seed finding documentation"
 linkTitle: "Announcing the General Seed Finder Tools (GSFT)"
 description: "The General Seed Finder Tools allows minecraft players and server owners to search for the perfect seed to make their dream world"
