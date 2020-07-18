@@ -16,6 +16,8 @@ defaultContentLanguageInSubdir = false
 # Useful when translating.
 enableMissingTranslationPlaceholders = true
 
+disableLiveReload = true
+
 rootUrl="seedfinding.com"
 disableKinds = ["taxonomy", "RSS" , "taxonomyTerm"]
 

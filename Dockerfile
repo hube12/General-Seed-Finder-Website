@@ -7,8 +7,6 @@ ENV HUGO_VERSION=0.71.0
 #ENV HUGO_TYPE=
 ENV HUGO_TYPE=_extended
 
-COPY ./run.sh /run.sh
-
 ENV HUGO_ID=hugo${HUGO_TYPE}_${HUGO_VERSION}
 RUN wget -O - https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${HUGO_ID}_Linux-64bit.tar.gz | tar -xz -C /tmp \
     && mkdir -p /usr/local/sbin \
@@ -19,8 +17,7 @@ RUN wget -O - https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION
 
 RUN apk add --update git asciidoctor libc6-compat libstdc++ nodejs npm \
     && apk upgrade \
-    && apk add --no-cache ca-certificates \
-    && chmod 0777 /run.sh
+    && apk add --no-cache ca-certificates 
 
 VOLUME /src
 VOLUME /output
@@ -29,7 +26,8 @@ WORKDIR /src
 COPY ./package.json /src/package.json
 RUN npm install
 
-
+COPY ./run.sh /run.sh
+RUN chmod 0777 /run.sh
 CMD ["/run.sh"]
 
 EXPOSE 1313

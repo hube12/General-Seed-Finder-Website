@@ -9,16 +9,8 @@ services:
     environment:
       - HUGO_REFRESH_TIME=3600
       - HUGO_THEME=docsy
-      - HUGO_BASEURL=
+      - HUGO_BASEURL=seedfinding.com
       - HUGO_WATCH=true
-    restart: always
-
-  web:
-    image: jojomi/nginx-static
-    volumes:
-      - ./output:/var/www
-    environment:
-      - VIRTUAL_HOST=seedfinding.com
     ports:
-      - 127.0.0.1:5005:80
+      - 127.0.0.1:5005:443
     restart: always
