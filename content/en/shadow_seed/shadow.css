@@ -50,3 +50,13 @@
 .td-section{
     background-color: #d1d1d1 !important;
 }
+
+.warning{
+    color: red;
+    background: #ffdc8f;
+    width: fit-content;
+    border-radius: 1em;
+    font-size: small;
+    padding: 0 10px;
+    font-weight: 700;
+}
