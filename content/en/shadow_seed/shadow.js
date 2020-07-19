@@ -37,6 +37,7 @@ function shadow() {
     }
     document.getElementById("result").textContent = solution.toString();
     document.getElementById("button_clipboard").style.display="inline-block";
+    document.getElementById("button_clipboard").textContent="Copy to clipboard";
 }
 
 function copy(el,id) {
