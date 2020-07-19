@@ -53,7 +53,7 @@ anchor = "smart"
 id = "UA-00000000-0"
 
 # Language configuration
-
+staticDir=['static']
 [languages]
 [languages.en]
 title = "Seed Finding"

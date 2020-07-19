@@ -1,0 +1,52 @@
+#td-cover-block-0{
+    animation: bgfade 3s infinite;
+    background-size:cover;
+    background-position:center;
+    background-color:#000;
+    position:relative;
+    animation-direction: alternate;
+}
+
+@keyframes bgfade {
+    0% {
+        background-image: url("/images/shadow1.png");
+    }
+    100% {
+        background-image: url("/images/shadow2.png");
+    }
+}
+
+/****** add a background overlay *******/
+#td-cover-block-0:before {
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:black;
+    opacity:0.3;
+}
+.display-result{
+    display: flex; justify-content: center;align-items: center;
+}
+
+@media screen and (max-width: 450px) {
+    .display-result{
+        flex-direction: column;
+    }
+}
+.result-text{
+    border-radius: 10px;padding: 5px;margin-right: 1vw; background: rgb(112,111,129);
+    background: linear-gradient(90deg, rgb(132, 131, 140) 0%, rgb(73, 73, 74) 35%, rgba(72,87,90,1) 100%);
+    font-size: x-large;
+
+}
+@media screen and (max-width: 300px) {
+    .result-text{
+        font-size: initial;
+    }
+}
+.td-section{
+    background-color: #d1d1d1 !important;
+}
