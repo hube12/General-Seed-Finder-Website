@@ -12,6 +12,7 @@ resources:
 
 <link rel="stylesheet" href="./shadow1.css">
 {{< blocks/cover class="shadow-cover"  >}}
+<h3 class="mb-5">This tool help you to get the shadow seed of you current world seed (also know as the seed with exactly the same biomes).</h3>
 <div class="mx-auto">
 <div class="input-group mb-3">
     
