@@ -10,7 +10,7 @@ resources:
     byline: "Photo: Riona MacNamara / CC-BY-CA"
 ---
 
-<link rel="stylesheet" href="./shadow.css">
+<link rel="stylesheet" href="./shadow1.css">
 {{< blocks/cover class="shadow-cover"  >}}
 <div class="mx-auto">
 <div class="input-group mb-3">
@@ -32,6 +32,6 @@ resources:
 {{< /blocks/cover >}}
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bignumber.js/9.0.0/bignumber.min.js" integrity="sha512-vg7OeB3i21ZSV8k2kyAXnbFL24Rwoz+nRC6xVAddaoEQIIboCtONdpuQQ+tl56RBDEf8fT0DtcVQeip2asslmg==" crossorigin="anonymous"></script>
-<script src="./shadow.js"></script>
+<script src="./shadow1.js"></script>
 
     

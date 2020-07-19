@@ -1,5 +1,5 @@
 #td-cover-block-0{
-    animation: bgfade 3s infinite;
+    animation: bgfade 8s infinite ease-in-out;
     background-size:cover;
     background-position:center;
     background-color:#000;
@@ -8,11 +8,16 @@
 }
 
 @keyframes bgfade {
-    0% {
+    0%{
         background-image: url("/images/shadow1.png");
+        opacity: 1.0;
+    }
+    50%{
+        opacity: 0.9;
     }
     100% {
         background-image: url("/images/shadow2.png");
+        opacity: 1.0;
     }
 }
 
