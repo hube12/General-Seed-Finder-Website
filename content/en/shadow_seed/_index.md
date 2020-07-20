@@ -3,11 +3,6 @@ title: Shadow Seed
 menu:
   main:
     weight: 40
-resources:
-- src: "**.{png,jpg}"
-  title: "Image #:counter"
-  params:
-    byline: "Photo: Riona MacNamara / CC-BY-CA"
 ---
 
 <link rel="stylesheet" href="./shadow1.css">
@@ -23,7 +18,7 @@ resources:
 </div> 
 <div id="warning" class="warning mb-3 mx-auto "></div>
 <div class="mb-3 mx-auto display-result">   
-<div onClick="selectText(this);" onselect="selectText(this);" class="vw-50 result-text" id="result" style=""></div>
+<div onClick="selectText(this);" onselect="selectText(this);" class="vw-50 result-text" id="result" style="display: none"></div>
 <button id="button_clipboard" class="btn btn-primary" type="button" onclick="copy(this,'result');" style="display: none">Copy to clipboard</button>
 
 </div> 

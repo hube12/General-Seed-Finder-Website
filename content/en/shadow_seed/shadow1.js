@@ -38,6 +38,7 @@ function shadow() {
         solution = solution.plus(I64)
     }
     document.getElementById("result").textContent = solution.toString();
+    document.getElementById("result").style.display = "inline-block";
     document.getElementById("button_clipboard").style.display = "inline-block";
     document.getElementById("button_clipboard").textContent = "Copy to clipboard";
 }
