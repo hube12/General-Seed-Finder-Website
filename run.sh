@@ -17,7 +17,7 @@ while [ true ]
 do
     if [[ $HUGO_WATCH != 'false' ]]; then
 	    echo "Watching..."
-        $HUGO server -e "production" --liveReloadPort=80  --disableFastRender --watch=true --source="/src" --theme="$HUGO_THEME" --destination="$HUGO_DESTINATION" --baseURL="$HUGO_BASEURL" --bind="0.0.0.0" --port=443 "$@" || exit 1
+        $HUGO server -e "production" --liveReloadPort=80 --noHTTPCache --disableFastRender --watch=true --source="/src" --theme="$HUGO_THEME" --destination="$HUGO_DESTINATION" --baseURL="$HUGO_BASEURL" --bind="0.0.0.0" --port=443 "$@" || exit 1
     else
 	    echo "Building one time..."
         $HUGO --source="/src" --theme="$HUGO_THEME" --destination="$HUGO_DESTINATION" --baseURL="$HUGO_BASEURL" "$@" || exit 1
