@@ -4,7 +4,7 @@ menu:
   main:
     weight: 40
 ---
-<link rel="stylesheet" href="./api.css">
+<link rel="stylesheet" href="./api.css?101">
 {{< blocks/cover class="shadow-cover"  >}}
 <h3 class="mb-5">This tool help you to get the gateway locations for getting the bedrock item.</h3>
 <input id="seed" type="text" class="form-control mb-3" placeholder="Your current seed" aria-label="Get your shadow seed" aria-describedby="basic-addon2">
@@ -18,6 +18,6 @@ menu:
 
 {{< /blocks/cover >}}
 
-<script src="./api.js?100"></script>
+<script src="./api.js?101"></script>
 
     
