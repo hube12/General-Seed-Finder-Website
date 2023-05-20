@@ -3,6 +3,7 @@ version: '3'
 services:
   hugo:
     build: .
+    container_name: seedfinding_website
     volumes:
       - ".:/src/"
       - "./output/:/output"
